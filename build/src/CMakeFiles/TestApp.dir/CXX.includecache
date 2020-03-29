@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/../include/TestApp/test.h
+
+/opt/02-study/cpp_project_template/src/model/test1.cpp
+test1.h
+/opt/02-study/cpp_project_template/src/model/test1.h
+iostream
+-
+
+/opt/02-study/cpp_project_template/src/model/test1.h
+
+/opt/02-study/cpp_project_template/src/test.cpp
+test.h
+/opt/02-study/cpp_project_template/src/test.h
+model/test1.h
+/opt/02-study/cpp_project_template/src/model/test1.h
+
+/opt/02-study/cpp_project_template/src/test.h
+TestApp/test.h
+/opt/02-study/cpp_project_template/src/TestApp/test.h
+iostream
+-
+
