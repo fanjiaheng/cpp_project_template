@@ -28,7 +28,14 @@ aux_source_directory(model SRC_FILES)
 #
 # 命令是用来生成动态库或静态库
 # - 第1个参数指定库的名字;
-# - 第2个参数决定是动态还是静态，如果没有就默认静态;
+# - 第2个参数决定是动态还是静态，如果没有就默认静态，动态使用 SHARED开启;
 # - 第3个参数指定生成库的源文件;
-#
+# 说明：
+# (1) 如果动态库的名字和静态库的名字相同，即：libTestApp.a libTestApp.so。此时，不能
+#     使用 add_library 同时生成 .a 和 .so;
+# (2) 如果动态库的名字和静态库的名字相同，即：libTestApp1.a libTestApp2.so。此时，可以
+#     使用 add_library 同时生成 .a 和 .so;
+# (3) 编译动态库可以用 target_link_libraries，但是我还没验证呢！
+# 
 add_library(TestApp ${SRC_FILES})
+# add_library(TestApp1 SHARED ${SRC_FILES})

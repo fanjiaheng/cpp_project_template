@@ -1,6 +1,12 @@
 # Build
 build
 
+# Bin
+bin/*
+
+# Test
+test/build
+
 # Prerequisites
 *.d
 
