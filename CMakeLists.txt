@@ -23,6 +23,12 @@ add_compile_options(-std=c++11 -Wall)
 
 
 #
+# 输出编译信息
+#
+message("Felix Start compile!")
+
+
+#
 # 命令可以向当前工程添加存放源文件的子目录，并可以指定中间二进制和目标二进制的存放位置
 #
 add_subdirectory(src)

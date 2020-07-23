@@ -1,5 +1,0 @@
-/opt/02-study/cpp_project_template/build/CMakeFiles/rebuild_cache.dir
-/opt/02-study/cpp_project_template/build/CMakeFiles/edit_cache.dir
-/opt/02-study/cpp_project_template/build/src/CMakeFiles/rebuild_cache.dir
-/opt/02-study/cpp_project_template/build/src/CMakeFiles/TestApp.dir
-/opt/02-study/cpp_project_template/build/src/CMakeFiles/edit_cache.dir
